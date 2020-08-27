@@ -1,0 +1,12 @@
+#app1 {
+}
+#app1 .output {
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+#app1 .actions {
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
