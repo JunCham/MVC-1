@@ -19,6 +19,6 @@
   width: 50%;
   display: none;
 }
-#app2 .tab-content > li.fuck {
+#app2 .tab-content > li.active {
   display: block;
 }

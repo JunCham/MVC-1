@@ -11335,12 +11335,12 @@ var _jquery = _interopRequireDefault(require("jquery"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var $tabBar = (0, _jquery.default)("#app2 .tab-bar");
-var $tabContent = (0, _jquery.default)("#app2 .tab - content");
+var $tabContent = (0, _jquery.default)("#app2 .tab-content");
 $tabBar.on("click", "li", function (e) {
   var $li = (0, _jquery.default)(e.currentTarget);
   var index = $li.index();
   $li.addClass("selected").siblings().removeClass("selected");
-  $tabContent.children().eq(index).addClass("fuck").siblings().removeClass("fuck");
+  $tabContent.children().eq(index).addClass("active").siblings().removeClass("active");
 });
 $tabBar.children().eq(0).trigger("click");
 },{"./app2.css":"app2.css","jquery":"../node_modules/jquery/dist/jquery.js"}],"app3.css":[function(require,module,exports) {
@@ -11428,7 +11428,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51389" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53615" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

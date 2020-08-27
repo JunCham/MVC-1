@@ -2,7 +2,7 @@ import "./app2.css";
 import $ from "jquery";
 
 const $tabBar = $("#app2 .tab-bar");
-const $tabContent = $("#app2 .tab - content");
+const $tabContent = $("#app2 .tab-content");
 
 $tabBar.on("click", "li", (e) => {
   const $li = $(e.currentTarget);
@@ -11,8 +11,8 @@ $tabBar.on("click", "li", (e) => {
   $tabContent
     .children()
     .eq(index)
-    .addClass("fuck")
+    .addClass("active")
     .siblings()
-    .removeClass("fuck");
+    .removeClass("active");
 });
 $tabBar.children().eq(0).trigger("click");
